@@ -13,6 +13,11 @@ jQuery(document).ready(function($) {
   </head>
   <body>
       <form>
+          <p>Pressing backspace will return to the previous page only if:</p>
+          <ul>
+              <li>Not having already typed anything in the input field.
+              <li>Not in the meantime having lost focus.
+          </ul>
           <dl>
               <dt><label for="myInput1">This field will get focus:</label></dt>
               <dd><input type="text" id="myInput1"></dd>
