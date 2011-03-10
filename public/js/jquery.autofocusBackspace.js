@@ -6,6 +6,7 @@
  *
  * TODO:
  *  - If disabled, remove event handlers to prevent unneccessary code execution
+ *
  * Copyright (c) 2011 Tibo Beijen
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -13,7 +14,7 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 (function($){
-    $.fn.autofocusBackspace = function() {
+    $.fn.autofocusBackspace = function () {
         // declare vars & determine start values
         var _target = this.first();
         var _initValue = _target.val();
@@ -22,7 +23,7 @@
 
         // disable if input is actually changed
         _target.keyup(function(event) {
-            if (_target.val() != _initValue) {
+            if (_target.val() !== _initValue) {
                 _active = false;
             }
         });
@@ -34,7 +35,7 @@
 
         // respond to backspace while active
         _target.keydown(function(event) {
-            if (_active && event.keyCode == '8') {
+            if (_active && event.keyCode === '8') {
                 history.back();
             }
         });
