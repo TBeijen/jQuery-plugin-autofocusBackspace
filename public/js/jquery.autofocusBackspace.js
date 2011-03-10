@@ -1,11 +1,5 @@
 /*
- * autofocusBackspace
- *
- * jQuery plugin that focuses the first of the matching elements while
- * preserving backspace functionality if no text has yet been entered
- *
- * TODO:
- *  - If disabled, remove event handlers to prevent unneccessary code execution
+ * autofocusBackspace jQuery plugin
  *
  * Copyright (c) 2011 Tibo Beijen
  *
@@ -35,7 +29,7 @@
 
         // respond to backspace while active
         _target.keydown(function(event) {
-            if (_active && event.keyCode === '8') {
+            if (_active && event.keyCode === 8) {
                 history.back();
             }
         });

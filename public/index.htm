@@ -1,29 +1,27 @@
 <!doctype html>
 <html>
-  <head>
-    <title>jQuery autofocusBackspace plugin</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <script src="js/jquery.autofocusBackspace.js"></script>
-    <script>
-jQuery(document).ready(function($) {
-    $('input').autofocusBackspace();
-});
-    </script>
-  </head>
-  <body>
-      <form>
-          <p>Pressing backspace will return to the previous page only if:</p>
-          <ul>
-              <li>Not having already typed anything in the input field.
-              <li>Not in the meantime having lost focus.
-          </ul>
-          <dl>
-              <dt><label for="myInput1">This field will get focus:</label></dt>
-              <dd><input type="text" id="myInput1"></dd>
-              <dt><label for="myInput2">And this field will not:</label></dt>
-              <dd><input type="text" id="myInput2"></dd>
-          </dl>
-      </form>
-  </body>
+    <head>
+        <title>jQuery autofocusBackspace plugin</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <form>
+            <p>Pressing backspace will return to the previous page only if:</p>
+            <ul>
+                <li>Not having already typed anything in the input field.
+                <li>Not in the meantime having lost focus.
+            </ul>
+            <dl>
+                <dt><label for="myInput1">This field will get focus:</label></dt>
+                <dd><input type="text" id="myInput1"></dd>
+                <dt><label for="myInput2">And this field will not:</label></dt>
+                <dd><input type="text" id="myInput2"></dd>
+            </dl>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script src="js/jQuery.autofocusBackspace.js"></script>
+        <script>
+$('input').autofocusBackspace();
+        </script>
+    </body>
 </html>
